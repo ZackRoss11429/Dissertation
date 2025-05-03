@@ -5,7 +5,8 @@
 
 # prime number for both applications
 #p = 2593697
-p = 140737488355327  # (=~ 2^47
+#p = 140737488355327  # (=~ 2^47
+p = 10007
 
 # coefficients for ECC
 coefficient_a = 2
