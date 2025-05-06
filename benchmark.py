@@ -20,6 +20,3 @@ def benchmark(bsgs, *args):
         "peak_memory_kb": peak / 1024
     }
 
-
-k = EC_BSGS(cyclic_group, EC_g, EC_shared_key)
-print(f"Discrete Logarithm Found: k = {k}")

@@ -11,14 +11,30 @@ def find_generator():
             return potential_generator
 
 
-g = find_generator()
-A_public_key = pow(g, priv_key_ff_a, p)
-B_public_key = pow(g, priv_key_ff_b, p)
-A_shared_key = pow(B_public_key, priv_key_ff_a, p)
-B_shared_key = pow(A_public_key, priv_key_ff_b, p)
-assert A_shared_key == B_shared_key
+def ff_parameters():
+    print("=========== FINITE FIELD PARAMETERS: ===========")
+    print(f"A's Private Key: {priv_key_ff_a}")
+    print(f"B's Private Key: {priv_key_ff_b}")
+    g = find_generator()
+    print(f"Generator Chosen: {g}")
+    A_public_key = pow(g, priv_key_ff_a, p)
+    B_public_key = pow(g, priv_key_ff_b, p)
+    print(f"A's Public Key: {A_public_key}")
+    print(f"B's Public Key: {B_public_key}")
+    A_shared_key = pow(B_public_key, priv_key_ff_a, p)
+    B_shared_key = pow(A_public_key, priv_key_ff_b, p)
+    print(f"Shared Secret Key: {A_shared_key}")
+    print("=================================")
 
-print(f"Generator chosen: {g}")
-print(f"A's Public Key: {A_public_key}")
-print(f"B's Public Key: {B_public_key}")
-print(f"A and B's Shared Secret Key: {A_shared_key}")
+    return {
+        "p": p,
+        "g": g,
+        "A_private": priv_key_ff_a,
+        "B_private": priv_key_ff_b,
+        "A_public": A_public_key,
+        "B_public": B_public_key,
+        "A_shared": A_shared_key,
+        "B_shared": B_shared_key
+    }
+
+

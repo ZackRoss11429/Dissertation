@@ -114,29 +114,44 @@ def is_generator(candidate_g, cyclic_group):
     return True
 
 
-cyclic_group = find_cyclic_group()
+def ecc_parameters():
+    print("=========== ELLIPTIC CURVE PARAMETERS: ===========")
+    print(f"A's Private Key: {k_value_ec_a}")
+    print(f"B's Private Key: {k_value_ec_b}")
+    cyclic_group = find_cyclic_group()
+    print(f"Cyclic group generated.")
 
-while True:
-    g = random.choice(cyclic_group)
-    if is_generator(g, cyclic_group) and g != "O":
-        break
+    while True:
+        g = random.choice(cyclic_group)
+        if is_generator(g, cyclic_group) and g != "O":
+            print(f"Generator Chosen: {g}")
+            break
 
-A_public_key = point_multiply(k_value_ec_a, g)
-B_public_key = point_multiply(k_value_ec_b, g)
-A_shared_key = point_multiply(k_value_ec_a, B_public_key)
-B_shared_key = point_multiply(k_value_ec_b, A_public_key)
+    A_public_key = point_multiply(k_value_ec_a, g)
+    B_public_key = point_multiply(k_value_ec_b, g)
+    print(f"A's Public Key: {A_public_key}")
+    print(f"B's Public Key: {B_public_key}")
 
-print("\n ======== ELLIPTIC CURVE DIFFIE-HELLMAN =========")
-print(f"Order of Cyclic Group: {len(cyclic_group)}")
-print(f"Generator chosen: {g}")
+    A_shared_key = point_multiply(k_value_ec_a, B_public_key)
+    B_shared_key = point_multiply(k_value_ec_b, A_public_key)
+    print(f"Shared Secret Key: {A_shared_key}")
+    print("=================================")
 
-print(f"\nA's Private Key: {k_value_ec_a}")
-print(f"B's Private Key: {k_value_ec_b}")
-print(f"A and B's Multiplied Private Key Value: {k_value_ec_b * k_value_ec_a % p}")
+    return {
+        "p": p,
+        "a": a,
+        "b": b,
+        "group": cyclic_group,
+        "order": len(cyclic_group),
+        "g": g,
+        "A_private": k_value_ec_a,
+        "B_private": k_value_ec_b,
+        "A_public": A_public_key,
+        "B_public": B_public_key,
+        "A_shared": A_shared_key,
+        "B_shared": B_shared_key
+    }
 
-print(f"\nA's Public Key: {A_public_key}")
-print(f"B's Public Key: {B_public_key}")
-print(f"Shared Secret Key of A and B: {A_shared_key}")
 
-x, y = A_shared_key
+
 
