@@ -20,15 +20,19 @@ def EC_BSGS(cyclic_group, P, Q):
     m = math.ceil(n ** 0.5)
     baby_steps = {}
     current = "O"
+    # calculates m which is the square root of the order of the group
 
     for j in range(m):
         if j % (m // 10) == 0:
             print(f"Baby Step Progress: {int(j / m * 100)}%")
         current = point_multiply(j, P)
         baby_steps[current] = j
+        # every iteration, it point multiplies the generator by j and logs it as baby steps
 
+    # This calculates the
     mP = point_multiply(m, P)
     mP_neg = (mP[0], -mP[1])
+
 
     current = Q
     for i in range(m):

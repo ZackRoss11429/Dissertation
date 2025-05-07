@@ -3,6 +3,9 @@ from sympy import factorint, isprime
 import random
 
 
+# This function randomly picks a generator by picking some number below p-2
+# and checking if raising it to the power of q mod p is not 1, where q is the largest prime factor of p-1.
+
 def find_generator():
     exp = (p - 1) // max(factorint(p - 1).keys())
     for i in range(1000):
@@ -11,6 +14,8 @@ def find_generator():
             return potential_generator
 
 
+# This instantiates a generator value, generates each public value with g^a mod p or g^b mod p
+# Then a shared key is generated via: g^ab mod p
 def ff_parameters():
     print("=========== FINITE FIELD PARAMETERS: ===========")
     print(f"A's Private Key: {priv_key_ff_a}")
@@ -36,5 +41,3 @@ def ff_parameters():
         "A_shared": A_shared_key,
         "B_shared": B_shared_key
     }
-
-

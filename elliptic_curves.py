@@ -64,7 +64,7 @@ def point_multiply(k, P):
     # for d = 0, 1, 2, ... 2^w -1.
     # d = d0 + 2^w * d1 + 2^2w * d2 + ... 2^mw * dm
 
-    w = 5  # larger window size means more computations but fewer operations
+    w = 8  # larger window size means more computations but fewer operations
     precomputed_values = [P]
     result = None
 
@@ -114,6 +114,11 @@ def is_generator(candidate_g, cyclic_group):
     return True
 
 
+# This instantiates the cyclic group
+# It picks a generator that is valid according to the is_generator function, ensuring it is also not the identity point
+# It generates each public key by point multiplying each party's private key with the generator
+# Then the final private key is generated through each party point multiplying the
+# others public key with their private key
 def ecc_parameters():
     print("=========== ELLIPTIC CURVE PARAMETERS: ===========")
     print(f"A's Private Key: {k_value_ec_a}")
