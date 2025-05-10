@@ -1,0 +1,322 @@
+{
+    "Iteration 0": {
+        "iteration": 0,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 202755353,
+        "ff_shared": 137810464,
+        "ff_exec_time (sec)": 92.0469970703125,
+        "ff_peak_memory (KB)": 1620.578125,
+        "ecc_generator": [
+            158055670,
+            80631517
+        ],
+        "ecc_shared": [
+            22648783,
+            166322393
+        ],
+        "ecc_exec_time (sec)": 257.4869999885559,
+        "ecc_peak_memory (KB)": 2618.25
+    },
+    "Iteration 1": {
+        "iteration": 1,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 100974869,
+        "ff_shared": 41418027,
+        "ff_exec_time (sec)": 84.98399925231934,
+        "ff_peak_memory (KB)": 1611.453125,
+        "ecc_generator": [
+            198832148,
+            23717611
+        ],
+        "ecc_shared": [
+            204670533,
+            131015906
+        ],
+        "ecc_exec_time (sec)": 228.49099922180176,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 2": {
+        "iteration": 2,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 4956711,
+        "ff_shared": 36023276,
+        "ff_exec_time (sec)": 66.45499992370605,
+        "ff_peak_memory (KB)": 1573.9921875,
+        "ecc_generator": [
+            213023434,
+            146120830
+        ],
+        "ecc_shared": [
+            68330968,
+            119756218
+        ],
+        "ecc_exec_time (sec)": 232.0710005760193,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 3": {
+        "iteration": 3,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 86196520,
+        "ff_shared": 56339491,
+        "ff_exec_time (sec)": 80.36600041389465,
+        "ff_peak_memory (KB)": 1603.83984375,
+        "ecc_generator": [
+            154898236,
+            173157284
+        ],
+        "ecc_shared": [
+            56720969,
+            110477537
+        ],
+        "ecc_exec_time (sec)": 227.5640013217926,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 4": {
+        "iteration": 4,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 27578040,
+        "ff_shared": 179081047,
+        "ff_exec_time (sec)": 74.58400177955627,
+        "ff_peak_memory (KB)": 1590.04296875,
+        "ecc_generator": [
+            120138995,
+            68302107
+        ],
+        "ecc_shared": [
+            169722540,
+            172834739
+        ],
+        "ecc_exec_time (sec)": 227.71699905395508,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 5": {
+        "iteration": 5,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 219506330,
+        "ff_shared": 145752156,
+        "ff_exec_time (sec)": 89.15999937057495,
+        "ff_peak_memory (KB)": 1619.3828125,
+        "ecc_generator": [
+            188693894,
+            5276850
+        ],
+        "ecc_shared": [
+            76184190,
+            166642138
+        ],
+        "ecc_exec_time (sec)": 228.07999897003174,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 6": {
+        "iteration": 6,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 128394186,
+        "ff_shared": 54608131,
+        "ff_exec_time (sec)": 86.13100051879883,
+        "ff_peak_memory (KB)": 1612.828125,
+        "ecc_generator": [
+            151749097,
+            164453544
+        ],
+        "ecc_shared": [
+            130537891,
+            206338896
+        ],
+        "ecc_exec_time (sec)": 223.32699990272522,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 7": {
+        "iteration": 7,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 180946020,
+        "ff_shared": 5862619,
+        "ff_exec_time (sec)": 87.4340009689331,
+        "ff_peak_memory (KB)": 1615.37109375,
+        "ecc_generator": [
+            53592599,
+            175343198
+        ],
+        "ecc_shared": [
+            157803987,
+            113036543
+        ],
+        "ecc_exec_time (sec)": 229.7860004901886,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 8": {
+        "iteration": 8,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 125892216,
+        "ff_shared": 213649141,
+        "ff_exec_time (sec)": 84.1909990310669,
+        "ff_peak_memory (KB)": 1608.4765625,
+        "ecc_generator": [
+            128025533,
+            142450644
+        ],
+        "ecc_shared": [
+            179371925,
+            133284653
+        ],
+        "ecc_exec_time (sec)": 224.7939989566803,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 9": {
+        "iteration": 9,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 17151436,
+        "ff_shared": 213140551,
+        "ff_exec_time (sec)": 71.87099838256836,
+        "ff_peak_memory (KB)": 1585.7421875,
+        "ecc_generator": [
+            187010448,
+            59636723
+        ],
+        "ecc_shared": [
+            73351202,
+            178921124
+        ],
+        "ecc_exec_time (sec)": 224.24299931526184,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 10": {
+        "iteration": 10,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 212270120,
+        "ff_shared": 16497824,
+        "ff_exec_time (sec)": 87.67299938201904,
+        "ff_peak_memory (KB)": 1615.6171875,
+        "ecc_generator": [
+            188242770,
+            46830663
+        ],
+        "ecc_shared": [
+            80932263,
+            84398854
+        ],
+        "ecc_exec_time (sec)": 230.80299925804138,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 11": {
+        "iteration": 11,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 165816656,
+        "ff_shared": 53801837,
+        "ff_exec_time (sec)": 85.01999807357788,
+        "ff_peak_memory (KB)": 1610.140625,
+        "ecc_generator": [
+            97496016,
+            144173933
+        ],
+        "ecc_shared": [
+            179565660,
+            86363880
+        ],
+        "ecc_exec_time (sec)": 224.42599892616272,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 12": {
+        "iteration": 12,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 76360910,
+        "ff_shared": 41338077,
+        "ff_exec_time (sec)": 81.42799973487854,
+        "ff_peak_memory (KB)": 1606.3828125,
+        "ecc_generator": [
+            65549166,
+            64702870
+        ],
+        "ecc_shared": [
+            155732731,
+            182982171
+        ],
+        "ecc_exec_time (sec)": 231.33099961280823,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 13": {
+        "iteration": 13,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 36135448,
+        "ff_shared": 154001072,
+        "ff_exec_time (sec)": 74.98399949073792,
+        "ff_peak_memory (KB)": 1593.33203125,
+        "ecc_generator": [
+            9556025,
+            70225491
+        ],
+        "ecc_shared": [
+            198013976,
+            27305491
+        ],
+        "ecc_exec_time (sec)": 232.0149986743927,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 14": {
+        "iteration": 14,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 25888626,
+        "ff_shared": 211738228,
+        "ff_exec_time (sec)": 74.34499955177307,
+        "ff_peak_memory (KB)": 1593.015625,
+        "ecc_generator": [
+            172089271,
+            216606615
+        ],
+        "ecc_shared": [
+            18880164,
+            86675227
+        ],
+        "ecc_exec_time (sec)": 225.35500121116638,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    },
+    "Iteration 15": {
+        "iteration": 15,
+        "prime": 220830871,
+        "a_private_key": 103211,
+        "b_private_key": 195672,
+        "ff_generator": 18016126,
+        "ff_shared": 193031118,
+        "ff_exec_time (sec)": 70.92399859428406,
+        "ff_peak_memory (KB)": 1588.56640625,
+        "ecc_generator": [
+            155885689,
+            135861802
+        ],
+        "ecc_shared": [
+            46219825,
+            140987697
+        ],
+        "ecc_exec_time (sec)": 226.00099897384644,
+        "ecc_peak_memory (KB)": 2521.7001953125
+    }
+}
