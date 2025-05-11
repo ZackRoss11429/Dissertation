@@ -1,4 +1,5 @@
 import json
+import os
 import matplotlib.pyplot as plt
 from utils import p, priv_key_a, priv_key_b
 from elliptic_curves import ecc_parameters
@@ -8,13 +9,23 @@ from elliptic_curves import ecc_parameters, point_multiply
 from baby_step_giant_step import FF_BSGS, EC_BSGS
 from benchmark import benchmark
 
-all_results = {}
 
-for i in range(16):
+if os.path.exists('results.json'):
+    with open('results.json', 'r') as f:
+        all_results = json.load(f)
+
+else:
+    all_results = {}
+
+
+# Main loop for establishing parameters, creating shared keys, and benchmarking Baby-Step Giant-Step's effort to
+# find the discrete logarithm / discrete scalar value
+for i in range(30):
     print(f"Iteration: {i}")
     print("Initialising Parameters:")
     ff_params = ff_parameters()
     ecc_params = ecc_parameters()
+    # This runs the finite field and ecc program to create shared keys and return its results as dictionaries
 
     FF_g = ff_params["g"]
     FF_shared_key = ff_params["A_shared"]
@@ -23,6 +34,8 @@ for i in range(16):
     EC_shared_key = ecc_params["A_shared"]
     cyclic_group = ecc_params["group"]
 
+    # This section benchmarks the Baby-Step Giant-Step algorithms for each implementation, passing through each
+    # function, and its arguments
     print("\nRunning Baby-Step Giant-Step Algorithm on Finite Field")
     ff_benchmark = benchmark(FF_BSGS, FF_shared_key, FF_g)
     print(f"Discrete Logarithm x = {ff_benchmark['result']}")
@@ -35,6 +48,7 @@ for i in range(16):
     print(f"Execution Time: {ecc_benchmark['execution_time_sec']} sec")
     print(f"Peak Memory Usage: {ecc_benchmark['peak_memory_kb']} KB")
 
+    # These are the results found that get exported to a json file for comparison
     results = {
         "iteration": i,
         "prime": p,
