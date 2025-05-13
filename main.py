@@ -1,6 +1,4 @@
 import json
-import os
-import matplotlib.pyplot as plt
 from utils import p, priv_key_a, priv_key_b
 from elliptic_curves import ecc_parameters
 from elliptic_curves import point_multiply
@@ -9,14 +7,7 @@ from elliptic_curves import ecc_parameters, point_multiply
 from baby_step_giant_step import FF_BSGS, EC_BSGS
 from benchmark import benchmark
 
-
-if os.path.exists('results.json'):
-    with open('results.json', 'r') as f:
-        all_results = json.load(f)
-
-else:
-    all_results = {}
-
+all_results = {}
 
 # Main loop for establishing parameters, creating shared keys, and benchmarking Baby-Step Giant-Step's effort to
 # find the discrete logarithm / discrete scalar value
@@ -66,6 +57,5 @@ for i in range(30):
 
     all_results[f"Iteration {i}"] = results
 
-    with open('results.json', 'w') as f:
+    with open('results2.json', 'w') as f:
         json.dump(all_results, f, indent=4)
-

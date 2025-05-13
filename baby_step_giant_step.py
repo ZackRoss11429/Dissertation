@@ -5,7 +5,6 @@ from utils import p
 from utils import coefficient_a as a
 from utils import coefficient_b as b
 
-import math
 from sympy import mod_inverse
 
 
@@ -17,7 +16,7 @@ def EC_BSGS(cyclic_group, P, Q):
     print(f"Generator: {P}")
     print(f"Order of group: {n}")
 
-    m = math.ceil(n ** 0.5)
+    m = int(pow(n, 0.5)) + 1
     baby_steps = {}
     current = "O"
     # calculates m which is the square root of the order of the group
@@ -32,7 +31,6 @@ def EC_BSGS(cyclic_group, P, Q):
     # This calculates the
     mP = point_multiply(m, P)
     mP_neg = (mP[0], -mP[1])
-
 
     current = Q
     for i in range(m):
@@ -49,7 +47,7 @@ def FF_BSGS(h, g):
     print(f"Order of group: {p - 1}")
 
     # how many steps
-    m = math.ceil(p ** 0.5)
+    m = int(pow(p, 0.5)) + 1
 
     baby_steps = {}
 

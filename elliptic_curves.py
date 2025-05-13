@@ -1,7 +1,7 @@
 from utils import p, k_value_ec_a, k_value_ec_b
 from utils import coefficient_a as a
 from utils import coefficient_b as b
-from sympy import factorint, isprime, mod_inverse
+from sympy import factorint, mod_inverse
 import random
 
 

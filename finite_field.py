@@ -1,5 +1,5 @@
 from utils import p, priv_key_ff_a, priv_key_ff_b
-from sympy import factorint, isprime
+from sympy import factorint
 import random
 
 
